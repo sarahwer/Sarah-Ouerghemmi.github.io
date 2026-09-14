@@ -6,7 +6,8 @@ in a browser to see it exactly as it will look online.
 ## Files
 
 ```
-index.html        Profile: about, experience, skills, education, awards, contact
+index.html        Home: short welcome page
+cv.html           CV: experience, skills, education, awards, contact
 research.html     Research: wake-up receivers, topics, publications, teaching
 projects.html     Projects: FUBE, WakeUp-Receiver, CONCENTRATE, earlier work
 404.html          Shown when a visitor hits a URL that does not exist

@@ -32,7 +32,7 @@ html[data-theme="dark"]{
   --shadow:0 2px 8px rgba(0,0,0,.45);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+html{scroll-behavior:smooth;scroll-padding-top:7.2rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--text);
   font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
@@ -42,15 +42,18 @@ a:hover{text-decoration:underline}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* top bar */
-.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:.75rem;
-  height:3.5rem;padding:0 1rem;background:var(--accent);color:var(--accent-ink);box-shadow:var(--shadow)}
+.topbar{position:sticky;top:0;z-index:40;background:var(--accent);color:var(--accent-ink);box-shadow:var(--shadow)}
 .topbar a{color:inherit;text-decoration:none}
-.brand{display:flex;align-items:center;gap:.6rem;font-weight:500;font-size:1.05rem;white-space:nowrap}
-.brand svg{width:1.5rem;height:1.5rem;flex:none}
-.tabs{display:flex;gap:.25rem;margin-left:1.25rem}
-.tabs a{padding:.35rem .7rem;border-radius:.15rem;font-size:.92rem;opacity:.85}
-.tabs a:hover{background:rgba(255,255,255,.15);opacity:1}
-.tabs a[aria-current="page"]{opacity:1;font-weight:500;box-shadow:inset 0 -2px 0 currentColor}
+.bar{display:flex;align-items:center;gap:.75rem;height:3.5rem;padding:0 1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:1.1rem;white-space:nowrap}
+.brand svg{width:1.6rem;height:1.6rem;flex:none}
+.tabs{display:flex;align-items:stretch;height:2.7rem;padding:0 1rem;
+  overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{display:flex;align-items:center;padding:0 .85rem;font-size:.93rem;opacity:.78;white-space:nowrap}
+.tabs a:first-child{padding-left:0}
+.tabs a:hover{opacity:1}
+.tabs a[aria-current="page"]{opacity:1;font-weight:500;box-shadow:inset 0 -3px 0 currentColor}
 .icon-btn{display:grid;place-items:center;width:2.25rem;height:2.25rem;flex:none;
   background:none;border:0;border-radius:50%;color:inherit;cursor:pointer}
 .icon-btn:hover{background:rgba(255,255,255,.15)}
@@ -76,7 +79,8 @@ html[data-theme="dark"] .search input::placeholder{color:rgba(8,32,31,.7)}
 /* layout */
 .layout{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);gap:3rem;
   max-width:68rem;margin:0 auto;padding:2rem 1.5rem 4rem}
-.sidenav{position:sticky;top:5rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto}
+.layout.plain{grid-template-columns:minmax(0,1fr);max-width:62rem;padding-top:2.5rem}
+.sidenav{position:sticky;top:7.2rem;align-self:start;max-height:calc(100vh - 9rem);overflow:auto}
 .sidenav p{margin:0 0 .5rem;font-size:.8rem;color:var(--text-soft)}
 .sidenav ul{list-style:none;margin:0;padding:0}
 .sidenav li a{display:block;padding:.25rem 0 .25rem .7rem;border-left:1px solid var(--rule);
@@ -100,6 +104,17 @@ strong{font-weight:500}
 .portrait{width:11.5rem;height:11.5rem;flex:none;border-radius:50%;
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
+
+/* home hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:3rem;align-items:start}
+.hero h2{font-size:1.15rem;font-weight:400;border:0;margin:1.75rem 0 .5rem;padding:0}
+.hero ul{margin-bottom:0}
+.hero-photo{width:100%;border-radius:.25rem;border:1px solid var(--rule);display:block}
+.hero-links{margin-top:2rem;font-size:.92rem}
+@media (max-width:800px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .hero-photo{max-width:20rem}
+}
 
 .btn{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .9rem;margin:.25rem .4rem .25rem 0;
   background:var(--accent);color:var(--accent-ink);border-radius:.15rem;font-size:.9rem;font-weight:500}
@@ -157,8 +172,6 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
 
 @media (max-width:900px){
   #menu-btn{display:grid}
-  .tabs{display:none}
-  .sidenav .pages{display:block}
   .layout{grid-template-columns:minmax(0,1fr);gap:0;padding-top:1.5rem}
   .sidenav{position:fixed;top:0;left:0;bottom:0;z-index:50;width:16rem;max-height:none;
     background:var(--bg);padding:1.25rem;border-right:1px solid var(--rule);
@@ -179,37 +192,31 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
 <body>
 
 <header class="topbar">
-  <button class="icon-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-  </button>
-  <a class="brand" href="index.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-      <path d="M2 12h3l2-5 3 10 3-13 3 16 2-8h4"/></svg>
-    <span>Sarah Ouerghemmi</span>
-  </a>
-  <nav class="tabs" aria-label="Pages"><a href="index.html">Profile</a><a href="research.html">Research</a><a href="projects.html">Projects</a></nav>
-  <div class="search">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-    <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
-    <div class="results" id="results" role="listbox"></div>
+  <div class="bar">
+    <button class="icon-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M2 12h3l2-5 3 10 3-13 3 16 2-8h4"/></svg>
+      <span>Sarah Ouerghemmi</span>
+    </a>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+      <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
+      <div class="results" id="results" role="listbox"></div>
+    </div>
+    <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
+    </button>
   </div>
-  <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
-  </button>
+  <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
 </header>
 
-<div class="scrim" id="scrim"></div>
-
 <div class="layout">
-  <nav class="sidenav" id="sidenav" aria-label="Navigation">
-    <div class="pages">
-      <p>Pages</p>
-      <ul><li><a href="index.html">Profile</a></li><li><a href="research.html">Research</a></li><li><a href="projects.html">Projects</a></li></ul>
-    </div>
+  <div class="scrim" id="scrim"></div>
+  <nav class="sidenav" id="sidenav" aria-label="On this page">
     <p>On this page</p>
     <ul class="sections"><li><a href="#notfound">Page not found</a></li></ul>
   </nav>
-
   <main>
 
     <section id="notfound">
@@ -243,24 +250,38 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
 (function(){
   var root = document.documentElement;
   var themeBtn = document.getElementById('theme-btn');
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.dataset.theme = 'dark';
+
+  // Follow the visitor's system setting, unless they have chosen otherwise here.
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (e) {}
+  if (saved === 'dark' || saved === 'light') {
+    root.dataset.theme = saved;
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    root.dataset.theme = 'dark';
+  }
+  themeBtn.setAttribute('aria-label',
+    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+
   themeBtn.addEventListener('click', function(){
     var dark = root.dataset.theme === 'dark';
     root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
     themeBtn.setAttribute('aria-label', dark ? 'Switch to dark mode' : 'Switch to light mode');
   });
 
   var nav = document.getElementById('sidenav'), scrim = document.getElementById('scrim'),
       menuBtn = document.getElementById('menu-btn');
-  function setDrawer(open){
-    nav.classList.toggle('open', open);
-    scrim.classList.toggle('open', open);
-    menuBtn.setAttribute('aria-expanded', String(open));
+  if (nav && menuBtn && scrim) {
+    var setDrawer = function(open){
+      nav.classList.toggle('open', open);
+      scrim.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+    };
+    menuBtn.addEventListener('click', function(){ setDrawer(!nav.classList.contains('open')); });
+    scrim.addEventListener('click', function(){ setDrawer(false); });
+    nav.addEventListener('click', function(e){ if (e.target.tagName === 'A') setDrawer(false); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setDrawer(false); });
   }
-  menuBtn.addEventListener('click', function(){ setDrawer(!nav.classList.contains('open')); });
-  scrim.addEventListener('click', function(){ setDrawer(false); });
-  nav.addEventListener('click', function(e){ if (e.target.tagName === 'A') setDrawer(false); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setDrawer(false); });
 
   var spyTargets = document.querySelectorAll('main section, main h3[id]');
   var spyLinks = Array.prototype.slice.call(document.querySelectorAll('.sidenav .sections a'));

@@ -7,12 +7,16 @@
 <meta name="description" content="This page does not exist.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/404.html">
+<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/404.html">
+<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/404.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="Page not found — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="This page does not exist.">
 <meta property="og:url" content="https://YOUR-USERNAME.github.io/404.html">
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +40,8 @@ html{scroll-behavior:smooth;scroll-padding-top:7.2rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--text);
   font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size:15px;line-height:1.65}
+  font-size:15px;line-height:1.65;
+  min-height:100vh;display:flex;flex-direction:column}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -54,6 +59,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .tabs a:first-child{padding-left:0}
 .tabs a:hover{opacity:1}
 .tabs a[aria-current="page"]{opacity:1;font-weight:500;box-shadow:inset 0 -3px 0 currentColor}
+.lang{display:flex;align-items:center;padding:0 .6rem;height:2rem;font-size:.85rem;font-weight:500;border:1px solid rgba(255,255,255,.45);border-radius:.15rem;flex:none}
+.lang:hover{background:rgba(255,255,255,.15);text-decoration:none}
 .icon-btn{display:grid;place-items:center;width:2.25rem;height:2.25rem;flex:none;
   background:none;border:0;border-radius:50%;color:inherit;cursor:pointer}
 .icon-btn:hover{background:rgba(255,255,255,.15)}
@@ -77,8 +84,9 @@ html[data-theme="dark"] .search input::placeholder{color:rgba(8,32,31,.7)}
 .results .empty{padding:.7rem .8rem;font-size:.9rem;color:var(--text-soft)}
 
 /* layout */
+.scrim{display:none}
 .layout{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);gap:3rem;
-  max-width:68rem;margin:0 auto;padding:2rem 1.5rem 4rem}
+  width:100%;max-width:68rem;margin:0 auto;padding:2rem 1.5rem 4rem;flex:1 0 auto}
 .layout.plain{grid-template-columns:minmax(0,1fr);max-width:62rem;padding-top:2.5rem}
 .sidenav{position:sticky;top:7.2rem;align-self:start;max-height:calc(100vh - 9rem);overflow:auto}
 .sidenav p{margin:0 0 .5rem;font-size:.8rem;color:var(--text-soft)}
@@ -162,7 +170,7 @@ strong{font-weight:500}
 .skills th,.skills td{text-align:left;vertical-align:top;padding:.6rem .8rem;border-bottom:1px solid var(--rule)}
 .skills th{width:11rem;font-weight:500;background:var(--bg-alt)}
 
-footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
+footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto;flex:none}
 .footer-inner{max-width:68rem;margin:0 auto;padding:1.75rem 1.5rem;display:flex;flex-wrap:wrap;
   gap:1rem;align-items:center;justify-content:space-between;font-size:.85rem;color:var(--text-soft)}
 .social{display:flex;gap:.35rem}
@@ -177,8 +185,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
     background:var(--bg);padding:1.25rem;border-right:1px solid var(--rule);
     transform:translateX(-100%);transition:transform .2s ease}
   .sidenav.open{transform:none}
-  .scrim{position:fixed;inset:0;z-index:45;background:rgba(0,0,0,.4);display:none}
-  .scrim.open{display:block}
+  .scrim.open{position:fixed;inset:0;z-index:45;background:rgba(0,0,0,.4);display:block}
   .search{width:auto;flex:1}
   .brand span{display:none}
   .entry,.pub{grid-template-columns:minmax(0,1fr);gap:.15rem}
@@ -204,6 +211,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
       <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
       <div class="results" id="results" role="listbox"></div>
     </div>
+    <a class="lang" href="de/404.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
     <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
     </button>
@@ -211,8 +219,8 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
   <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
 </header>
 
+<div class="scrim" id="scrim"></div>
 <div class="layout">
-  <div class="scrim" id="scrim"></div>
   <nav class="sidenav" id="sidenav" aria-label="On this page">
     <p>On this page</p>
     <ul class="sections"><li><a href="#notfound">Page not found</a></li></ul>
@@ -223,7 +231,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
       <h1>Page not found</h1>
       <p>That page does not exist. It may have been renamed, or the link may be wrong.</p>
       <p>
-        <a class="btn" href="index.html">Back to the profile</a>
+        <a class="btn" href="index.html">Back to the home page</a>
         <a class="btn ghost" href="research.html">Research</a>
         <a class="btn ghost" href="projects.html">Projects</a>
       </p>

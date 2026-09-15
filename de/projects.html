@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research — Dr.-Ing. Sarah Ouerghemmi</title>
-<meta name="description" content="Wake-up receivers, low-noise amplifier design and publications.">
+<title>Projekte — Dr.-Ing. Sarah Ouerghemmi</title>
+<meta name="description" content="Forschungsverbünde, Hardware-Entwicklungen und frühere Arbeiten.">
 <meta name="author" content="Sarah Ouerghemmi">
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/research.html">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/research.html">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/research.html">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/projects.html">
+<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/projects.html">
+<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/projects.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:title" content="Research — Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:description" content="Wake-up receivers, low-noise amplifier design and publications.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/research.html">
+<meta property="og:title" content="Projekte — Dr.-Ing. Sarah Ouerghemmi">
+<meta property="og:description" content="Forschungsverbünde, Hardware-Entwicklungen und frühere Arbeiten.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/de/projects.html">
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
-<meta property="og:locale" content="en_GB">
+<meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,7 +200,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 
 <header class="topbar">
   <div class="bar">
-    <button class="icon-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+    <button class="icon-btn" id="menu-btn" aria-label="Navigation öffnen" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
     <a class="brand" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
         <path d="M2 12h3l2-5 3 10 3-13 3 16 2-8h4"/></svg>
@@ -208,149 +208,144 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     </a>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-      <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
+      <input type="search" id="search" placeholder="Seite durchsuchen" aria-label="Seite durchsuchen" autocomplete="off">
       <div class="results" id="results" role="listbox"></div>
     </div>
-    <a class="lang" href="de/research.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
-    <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
+    <a class="lang" href="../projects.html" hreflang="en" lang="en" title="This page in English">English</a>
+    <button class="icon-btn" id="theme-btn" aria-label="Zur dunklen Ansicht wechseln">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
     </button>
   </div>
-  <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
+  <nav class="tabs" aria-label="Pages"><a href="index.html">Start</a><a href="research.html">Forschung</a><a href="projects.html" aria-current="page">Projekte</a><a href="cv.html">Lebenslauf</a></nav>
 </header>
 
 <div class="scrim" id="scrim"></div>
 <div class="layout">
-  <nav class="sidenav" id="sidenav" aria-label="On this page">
-    <p>On this page</p>
-    <ul class="sections"><li><a href="#overview">Overview</a></li><li><a href="#topics">Topics</a></li><li><a href="#publications">Publications</a></li><li><a href="#teaching">Teaching</a></li></ul>
+  <nav class="sidenav" id="sidenav" aria-label="Auf dieser Seite">
+    <p>Auf dieser Seite</p>
+    <ul class="sections"><li><a href="#intro">Überblick</a></li><li><a href="#rf">HF & Sensornetze</a></li><li><a href="#collaboration">Zusammenarbeit</a></li><li><a href="#earlier">Frühere Arbeiten</a></li></ul>
   </nav>
   <main>
 
-    <section id="overview">
-      <h1>Research</h1>
+    <section id="intro">
+      <h1>Projekte</h1>
       <p class="lead">
-        Low-power radio front ends for wireless sensor networks, and the amplifiers that
-        let them hear a weak signal without spending the battery.
+        Forschungsverbünde, Hardware-Entwicklungen und einige Arbeiten aus früheren Jahren,
+        die nichts mit Funk zu tun hatten.
       </p>
-      <p>
-        A wireless sensor node normally has to choose between being reachable and lasting a
-        year on a battery, because even a modern radio module needs milliwatts just to listen.
-        The usual answer is duty cycling — the radio sleeps and wakes on a schedule — which
-        buys battery life and pays for it in latency.
-      </p>
-      <p>
-        A wake-up receiver breaks that trade-off. It is a second, permanently listening
-        receiver running on a few microwatts, which switches the main radio on only when the
-        node is actually addressed. The node stays continuously reachable at an average power
-        budget of around 10 µW. The cost is sensitivity: a receiver that simple does not hear
-        far. My work is on the RF front end that wins the sensitivity back, without spending
-        the power budget that made the approach worthwhile in the first place.
-      </p>
-      <p>
-        In practice that means designing low-noise amplifiers at 433 MHz and 868 MHz, choosing
-        an operating point that balances gain, noise figure and current draw, matching them with
-        lumped components or microstrip, and carrying each design through ADS simulation, PCB
-        implementation and bench measurement with an MSP430-based test setup.
-      </p>
-      <div class="note">
+    </section>
+
+    <section id="rf">
+      <h2>Hochfrequenz &amp; drahtlose Sensornetzwerke</h2>
+
+      <div class="proj">
+        <h3>FUBE &ndash; Funksensoren für die Tierbeobachtung aus dem All</h3>
+        <p class="pmeta">2022&ndash;2026 &middot; HTWK Leipzig, gefördert durch BMBF/VDI &middot; Verbundprojekt mit mehreren Partnern</p>
         <p>
-          This work was carried out in the
-          <a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">WakeUp-Receiver group</a>
-          at HTWK Leipzig, and in my doctorate under joint supervision with ENET'COM Sfax.
+          Funksensoren, leicht genug, um von Tieren getragen zu werden, und dennoch aus dem
+          Orbit hörbar. Ich verantwortete das HF-Frontend des Wake-up-Empfängers.
         </p>
+        <ul>
+          <li>Entwurf energiesparender rauscharmer Verstärker und Anpassnetzwerke für die Detektion sehr schwacher Signale, optimiert auf die Empfindlichkeit langer Strecken zwischen Satellit und Sensor</li>
+          <li>HF-Simulation in ADS und Leiterplatten-Prototyping in Altium Designer und Fusion 360 bis zur Validierung im Labor</li>
+          <li>Bereitstellung der Messgrundlage, die das Team für die Doppler-basierte Lokalisierung mit einem einzigen Satelliten nutzte</li>
+        </ul>
+        <p class="tags"><span class="tag">HF-Frontend</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">Fusion 360</span><span class="tag">Verbundprojekt</span></p>
+      </div>
+
+      <div class="proj">
+        <h3>WakeUp-Receiver</h3>
+        <p class="pmeta">seit 2021 &middot; HTWK Leipzig, Arbeitsgruppe Smart Diagnostik und Online-Monitoring</p>
+        <p>
+          Das langjährige Vorhaben der Arbeitsgruppe, einen Sensorknoten bei durchschnittlich
+          rund 10 µW dauerhaft erreichbar zu halten. Mehrere Schaltungsvarianten wurden
+          analysiert, aufgebaut und vermessen; mein Teil war das HF-Frontend und die
+          Verstärker, die dessen Empfindlichkeit bestimmen.
+        </p>
+        <ul>
+          <li>Beitrag eines Frontends unterhalb von 10 µW bei gleichzeitiger Einhaltung der Empfindlichkeitsvorgaben</li>
+          <li>Entwurf von LNA und Anpassnetzwerk bei 868 MHz, Schaltplan und Layout, Aufbau des Prototyps</li>
+          <li>Charakterisierung am Messplatz mit MSP430-basiertem Aufbau, einschließlich Protokollszenarien</li>
+        </ul>
+        <p class="tags"><span class="tag">LNA</span><span class="tag">868 MHz</span><span class="tag">MSP430</span><span class="tag">Leiterplatte</span></p>
+        <p><a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">Projektseite der HTWK Leipzig</a> &middot; <a href="research.html#publications">zugehörige Veröffentlichungen</a></p>
+      </div>
+
+      <div class="proj">
+        <h3>868-MHz-LNA-Architektur &ndash; Abschlussarbeit</h3>
+        <p class="pmeta">08&ndash;12/2020 &middot; HTWK Leipzig &middot; Note: sehr gut</p>
+        <p>
+          Mein erstes Frontend für einen Wake-up-Empfänger und der Anfang von allem, was
+          folgte: Transistorcharakterisierung, ADS-Simulation und eine Leiterplattenumsetzung
+          in Altium Designer, die Empfindlichkeit und Stromaufnahme gemeinsam verbessern sollte.
+        </p>
+        <p class="tags"><span class="tag">LNA</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">DAAD-Stipendium</span></p>
       </div>
     </section>
 
-    <section id="topics">
-      <h2>Topics</h2>
-      <ul>
-        <li>Ultra-low-power wake-up receivers for wireless sensor networks and IoT</li>
-        <li>Low-noise amplifier design at 433 MHz and 868 MHz</li>
-        <li>Noise figure, gain and sensitivity optimisation under microwatt power budgets</li>
-        <li>Microstrip and lumped-element matching; BJT and heterojunction bipolar front-end topologies</li>
-        <li>Wideband LNAs for sub-GHz peer-to-peer links, for range and latency</li>
-        <li>Full hardware cycle: ADS simulation, schematic, PCB layout, prototype, bench validation</li>
-        <li>Protocol and scenario work on MSP430-based nodes</li>
-      </ul>
-    </section>
+    <section id="collaboration">
+      <h2>Zusammenarbeit &amp; Öffentlichkeitsarbeit</h2>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>
-        A full list with citation counts is on
-        <a href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.
-      </p>
-
-      <div class="pub">
-        <div class="year">2025</div>
-        <div>
-          <p class="title">A Low-Power 868 MHz BJT-Based LNA with Microstrip Matching for Wake-Up Receivers in IoT Applications</p>
-          <p class="authors"><strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">Electronics 14(12), 2429</p>
-          <p class="links"><a href="https://doi.org/10.3390/electronics14122429" target="_blank" rel="noopener">DOI</a> · open access</p>
-        </div>
+      <div class="proj">
+        <h3>CONCENTRATE &ndash; DAAD-SDG-Partnerschaft</h3>
+        <p class="pmeta">2022&ndash;2025 &middot; HTWK Leipzig und ENET'COM Sfax &middot; Deutschland und Tunesien</p>
+        <p>
+          Eine Partnerschaft zwischen zwei Hochschulen in zwei Ländern, in der ich für
+          Koordination und Öffentlichkeitsarbeit zuständig war statt für Schaltungen.
+        </p>
+        <ul>
+          <li>Mitorganisation von Veranstaltungen und Öffentlichkeitsarbeit an beiden Partnerhochschulen</li>
+          <li>Vorstellung des Projekts auf internationalen Konferenzen</li>
+          <li>Unterstützung von Career-Center-Aktivitäten und Workshops</li>
+        </ul>
+        <p class="tags"><span class="tag">DAAD</span><span class="tag">Partnerschaft</span><span class="tag">Veranstaltungen</span></p>
       </div>
 
-      <div class="pub">
-        <div class="year">2025</div>
-        <div>
-          <p class="title">Design of a Low-Noise Amplifier for Ultra Low Power Wake-Up Receiver at 433 MHz</p>
-          <p class="authors"><strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">22nd IEEE International Multi-Conference on Systems, Signals &amp; Devices (SSD), Monastir, Tunisia, pp. 545–550</p>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="year">2023</div>
-        <div>
-          <p class="title">Wide-Band Low-Noise Amplifier for Reliable Wireless Sensor Networks</p>
-          <p class="authors"><strong>S. Ouerghemmi</strong>, I. Ketata, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">IEEE SENSORS, Vienna, Austria, pp. 1–4</p>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="year">2023</div>
-        <div>
-          <p class="title">Design of a Low-Noise Amplifier for Ultra Low Power Wake-Up Receiver in 868 MHz</p>
-          <p class="authors">O. Chafai, M. W. Nasri, R. Barrak, <strong>S. Ouerghemmi</strong>, I. Ketata, F. Derbel</p>
-          <p class="venue">20th International Multi-Conference on Systems, Signals &amp; Devices (SSD), Mahdia, Tunisia, pp. 30–35</p>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="year">2022</div>
-        <div>
-          <p class="title">Design and Implementation of a Low Noise Amplifier Operating at 868 MHz for a Duty-Cycled Wake-Up Receiver Front-End</p>
-          <p class="authors">I. Ketata, <strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">Electronics 11(19), 3235</p>
-          <p class="links"><a href="https://doi.org/10.3390/electronics11193235" target="_blank" rel="noopener">DOI</a> · open access</p>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="year">2021</div>
-        <div>
-          <p class="title">Performance Analysis of a BJT-Based Low Noise Amplifier for Power-Aware Wake-Up Receiver Nodes</p>
-          <p class="authors"><strong>S. Ouerghemmi</strong>, I. Ketata, S. Sahnoun, F. Derbel</p>
-          <p class="venue">International Multi-Conference on Systems, Signals &amp; Devices (SSD)</p>
-        </div>
+      <div class="proj">
+        <h3>Drittmittelanträge</h3>
+        <p class="pmeta">laufend &middot; HTWK Leipzig</p>
+        <p>
+          Mitarbeit an DAAD-Anträgen, darunter Ta'Ziz und SDG-Initiativen, sowie Vertretung
+          der Hochschule auf internationalen Konferenzen.
+        </p>
+        <p class="tags"><span class="tag">Antragstellung</span><span class="tag">DAAD</span></p>
       </div>
     </section>
 
-    <section id="teaching">
-      <h2>Teaching &amp; supervision</h2>
-      <p>
-        At HTWK Leipzig I supervise graduation projects and final-year engineering students —
-        task planning, weekly project reviews, and managing laboratory resources and components.
-        I also give seminars and support professors in courses and workshops.
-      </p>
-      <p>
-        I am glad to hear from students interested in RF front-end design, low-power embedded
-        hardware, or PCB development for sensor nodes.
-        <a href="index.html#contact">Get in touch</a>.
-      </p>
+    <section id="earlier">
+      <h2>Frühere Arbeiten</h2>
+
+      <div class="proj">
+        <h3>Personenerkennung für die Werkssicherheit</h3>
+        <p class="pmeta">01&ndash;05/2019 &middot; PIVA Software, Sfax, Tunesien</p>
+        <p>
+          Ein System der Bildverarbeitung, das die Sicherheit auf dem Gelände verbessern und
+          einen Überblick über die Mitarbeitenden in den verschiedenen Unternehmensbereichen
+          geben sollte, als Prototyp auf einem Raspberry Pi mit Kamera.
+        </p>
+        <p class="tags"><span class="tag">OpenCV</span><span class="tag">CNN</span><span class="tag">TensorFlow / Keras</span><span class="tag">FaceNet</span><span class="tag">Raspberry Pi</span></p>
+      </div>
+
+      <div class="proj">
+        <h3>Cloud-Testautomatisierung für Gateways</h3>
+        <p class="pmeta">07&ndash;09/2019 &middot; Sagemcom Software &amp; Technologies, Mégrine, Tunesien</p>
+        <p>
+          Bereitstellung von Cloud-Diensten für Tests, Virtualisierung von Servern,
+          Konfiguration von Gateways und Provisionierung von Parametern sowie Aufbau eines
+          Auto Configuration Servers in der Cloud.
+        </p>
+        <p class="tags"><span class="tag">TR-069</span><span class="tag">Linux</span><span class="tag">TCP/IP</span><span class="tag">SOAP</span><span class="tag">Jenkins</span></p>
+      </div>
+
+      <div class="proj">
+        <h3>Fertigung von Linky-Stromzählern</h3>
+        <p class="pmeta">07&ndash;08/2018 &middot; Sagemcom, Ben Arous, Tunesien</p>
+        <p>
+          Arbeit in der Fertigung intelligenter Stromzähler, von der SMD- und
+          THT-Leiterplattenbestückung über Funktionstests bis zur CPL-Integration.
+        </p>
+        <p class="tags"><span class="tag">SMD / THT</span><span class="tag">Bestückung</span><span class="tag">Test</span><span class="tag">CPL</span></p>
+      </div>
     </section>
 
   </main>
@@ -384,13 +379,13 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     root.dataset.theme = 'dark';
   }
   themeBtn.setAttribute('aria-label',
-    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    root.dataset.theme === 'dark' ? 'Zur hellen Ansicht wechseln' : 'Zur dunklen Ansicht wechseln');
 
   themeBtn.addEventListener('click', function(){
     var dark = root.dataset.theme === 'dark';
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to dark mode' : 'Switch to light mode');
+    themeBtn.setAttribute('aria-label', dark ? 'Zur dunklen Ansicht wechseln' : 'Zur hellen Ansicht wechseln');
   });
 
   var nav = document.getElementById('sidenav'), scrim = document.getElementById('scrim'),
@@ -444,7 +439,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
       seen[item.text] = 1; return true;
     }).slice(0, 10);
     if (!hits.length){
-      results.innerHTML = '<div class="empty">Nothing found on this page. Try the other pages.</div>';
+      results.innerHTML = '<div class="empty">Auf dieser Seite nichts gefunden. Bitte die anderen Seiten versuchen.</div>';
     } else {
       results.innerHTML = hits.map(function(h){
         var safe = h.text.replace(/[&<>]/g, function(c){

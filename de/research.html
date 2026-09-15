@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research — Dr.-Ing. Sarah Ouerghemmi</title>
-<meta name="description" content="Wake-up receivers, low-noise amplifier design and publications.">
+<title>Forschung — Dr.-Ing. Sarah Ouerghemmi</title>
+<meta name="description" content="Wake-up-Empfänger, Entwurf rauscharmer Verstärker und Veröffentlichungen.">
 <meta name="author" content="Sarah Ouerghemmi">
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/research.html">
 <link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/research.html">
 <link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/research.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:title" content="Research — Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:description" content="Wake-up receivers, low-noise amplifier design and publications.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/research.html">
+<meta property="og:title" content="Forschung — Dr.-Ing. Sarah Ouerghemmi">
+<meta property="og:description" content="Wake-up-Empfänger, Entwurf rauscharmer Verstärker und Veröffentlichungen.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/de/research.html">
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
-<meta property="og:locale" content="en_GB">
+<meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,7 +200,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 
 <header class="topbar">
   <div class="bar">
-    <button class="icon-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+    <button class="icon-btn" id="menu-btn" aria-label="Navigation öffnen" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
     <a class="brand" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
         <path d="M2 12h3l2-5 3 10 3-13 3 16 2-8h4"/></svg>
@@ -208,77 +208,82 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     </a>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-      <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
+      <input type="search" id="search" placeholder="Seite durchsuchen" aria-label="Seite durchsuchen" autocomplete="off">
       <div class="results" id="results" role="listbox"></div>
     </div>
-    <a class="lang" href="de/research.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
-    <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
+    <a class="lang" href="../research.html" hreflang="en" lang="en" title="This page in English">English</a>
+    <button class="icon-btn" id="theme-btn" aria-label="Zur dunklen Ansicht wechseln">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
     </button>
   </div>
-  <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
+  <nav class="tabs" aria-label="Pages"><a href="index.html">Start</a><a href="research.html" aria-current="page">Forschung</a><a href="projects.html">Projekte</a><a href="cv.html">Lebenslauf</a></nav>
 </header>
 
 <div class="scrim" id="scrim"></div>
 <div class="layout">
-  <nav class="sidenav" id="sidenav" aria-label="On this page">
-    <p>On this page</p>
-    <ul class="sections"><li><a href="#overview">Overview</a></li><li><a href="#topics">Topics</a></li><li><a href="#publications">Publications</a></li><li><a href="#teaching">Teaching</a></li></ul>
+  <nav class="sidenav" id="sidenav" aria-label="Auf dieser Seite">
+    <p>Auf dieser Seite</p>
+    <ul class="sections"><li><a href="#overview">Überblick</a></li><li><a href="#topics">Themen</a></li><li><a href="#publications">Veröffentlichungen</a></li><li><a href="#teaching">Lehre</a></li></ul>
   </nav>
   <main>
 
     <section id="overview">
-      <h1>Research</h1>
+      <h1>Forschung</h1>
       <p class="lead">
-        Low-power radio front ends for wireless sensor networks, and the amplifiers that
-        let them hear a weak signal without spending the battery.
+        Energiesparende Funk-Frontends für drahtlose Sensornetzwerke &ndash; und die
+        Verstärker, mit denen sie ein schwaches Signal hören, ohne die Batterie zu leeren.
       </p>
       <p>
-        A wireless sensor node normally has to choose between being reachable and lasting a
-        year on a battery, because even a modern radio module needs milliwatts just to listen.
-        The usual answer is duty cycling — the radio sleeps and wakes on a schedule — which
-        buys battery life and pays for it in latency.
+        Ein drahtloser Sensorknoten muss sich normalerweise entscheiden: entweder ständig
+        erreichbar sein oder ein Jahr lang mit einer Batterie auskommen. Schon das bloße
+        Zuhören kostet ein modernes Funkmodul einige Milliwatt. Die übliche Antwort darauf
+        ist Duty Cycling &ndash; das Funkmodul schläft und wacht nach einem festen Zeitplan
+        wieder auf. Das verlängert die Batterielaufzeit und bezahlt dafür mit Latenz.
       </p>
       <p>
-        A wake-up receiver breaks that trade-off. It is a second, permanently listening
-        receiver running on a few microwatts, which switches the main radio on only when the
-        node is actually addressed. The node stays continuously reachable at an average power
-        budget of around 10 µW. The cost is sensitivity: a receiver that simple does not hear
-        far. My work is on the RF front end that wins the sensitivity back, without spending
-        the power budget that made the approach worthwhile in the first place.
+        Ein Wake-up-Empfänger löst diesen Zielkonflikt auf. Er ist ein zweiter, dauerhaft
+        lauschender Empfänger, der mit wenigen Mikrowatt auskommt und das Hauptfunkmodul
+        erst dann einschaltet, wenn der Knoten tatsächlich angesprochen wird. Der Knoten
+        bleibt durchgehend erreichbar, bei einer durchschnittlichen Leistungsaufnahme von
+        etwa 10 µW. Der Preis dafür ist die Empfindlichkeit: Ein derart einfacher Empfänger
+        hört nicht weit. Meine Arbeit gilt dem HF-Frontend, das diese Empfindlichkeit
+        zurückgewinnt, ohne das Leistungsbudget aufzubrauchen, das den Ansatz überhaupt erst
+        lohnend macht.
       </p>
       <p>
-        In practice that means designing low-noise amplifiers at 433 MHz and 868 MHz, choosing
-        an operating point that balances gain, noise figure and current draw, matching them with
-        lumped components or microstrip, and carrying each design through ADS simulation, PCB
-        implementation and bench measurement with an MSP430-based test setup.
+        In der Praxis heißt das: rauscharme Verstärker bei 433 MHz und 868 MHz entwerfen,
+        einen Arbeitspunkt zwischen Verstärkung, Rauschzahl und Stromaufnahme finden, mit
+        konzentrierten Bauelementen oder Mikrostreifenleitungen anpassen &ndash; und jeden
+        Entwurf durch ADS-Simulation, Leiterplattenaufbau und Messung an einem
+        MSP430-basierten Messplatz führen.
       </p>
       <div class="note">
         <p>
-          This work was carried out in the
-          <a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">WakeUp-Receiver group</a>
-          at HTWK Leipzig, and in my doctorate under joint supervision with ENET'COM Sfax.
+          Diese Arbeit entstand in der
+          <a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">Arbeitsgruppe WakeUp-Receiver</a>
+          an der HTWK Leipzig und in meiner Promotion in gemeinsamer Betreuung mit der
+          ENET'COM Sfax.
         </p>
       </div>
     </section>
 
     <section id="topics">
-      <h2>Topics</h2>
+      <h2>Themen</h2>
       <ul>
-        <li>Ultra-low-power wake-up receivers for wireless sensor networks and IoT</li>
-        <li>Low-noise amplifier design at 433 MHz and 868 MHz</li>
-        <li>Noise figure, gain and sensitivity optimisation under microwatt power budgets</li>
-        <li>Microstrip and lumped-element matching; BJT and heterojunction bipolar front-end topologies</li>
-        <li>Wideband LNAs for sub-GHz peer-to-peer links, for range and latency</li>
-        <li>Full hardware cycle: ADS simulation, schematic, PCB layout, prototype, bench validation</li>
-        <li>Protocol and scenario work on MSP430-based nodes</li>
+        <li>Ultra-Low-Power-Wake-up-Empfänger für drahtlose Sensornetzwerke und das Internet der Dinge</li>
+        <li>Entwurf rauscharmer Verstärker bei 433 MHz und 868 MHz</li>
+        <li>Optimierung von Rauschzahl, Verstärkung und Empfindlichkeit im Mikrowatt-Bereich</li>
+        <li>Anpassnetzwerke mit Mikrostreifenleitungen und konzentrierten Bauelementen; Frontend-Topologien mit Bipolar- und Heterojunction-Transistoren</li>
+        <li>Breitbandige rauscharme Verstärker für Sub-GHz-Verbindungen, für Reichweite und Latenz</li>
+        <li>Der vollständige Hardware-Zyklus: ADS-Simulation, Schaltplan, Layout, Prototyp, Messung</li>
+        <li>Protokoll- und Szenarienarbeit auf MSP430-basierten Knoten</li>
       </ul>
     </section>
 
     <section id="publications">
-      <h2>Publications</h2>
+      <h2>Veröffentlichungen</h2>
       <p>
-        A full list with citation counts is on
+        Eine vollständige Liste mit Zitationszahlen findet sich bei
         <a href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.
       </p>
 
@@ -288,7 +293,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="title">A Low-Power 868 MHz BJT-Based LNA with Microstrip Matching for Wake-Up Receivers in IoT Applications</p>
           <p class="authors"><strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
           <p class="venue">Electronics 14(12), 2429</p>
-          <p class="links"><a href="https://doi.org/10.3390/electronics14122429" target="_blank" rel="noopener">DOI</a> · open access</p>
+          <p class="links"><a href="https://doi.org/10.3390/electronics14122429" target="_blank" rel="noopener">DOI</a> &middot; Open Access</p>
         </div>
       </div>
 
@@ -297,7 +302,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <div>
           <p class="title">Design of a Low-Noise Amplifier for Ultra Low Power Wake-Up Receiver at 433 MHz</p>
           <p class="authors"><strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">22nd IEEE International Multi-Conference on Systems, Signals &amp; Devices (SSD), Monastir, Tunisia, pp. 545–550</p>
+          <p class="venue">22. IEEE International Multi-Conference on Systems, Signals &amp; Devices (SSD), Monastir, Tunesien, S. 545&ndash;550</p>
         </div>
       </div>
 
@@ -306,7 +311,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <div>
           <p class="title">Wide-Band Low-Noise Amplifier for Reliable Wireless Sensor Networks</p>
           <p class="authors"><strong>S. Ouerghemmi</strong>, I. Ketata, A. Fakhfakh, F. Derbel</p>
-          <p class="venue">IEEE SENSORS, Vienna, Austria, pp. 1–4</p>
+          <p class="venue">IEEE SENSORS, Wien, Österreich, S. 1&ndash;4</p>
         </div>
       </div>
 
@@ -315,7 +320,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <div>
           <p class="title">Design of a Low-Noise Amplifier for Ultra Low Power Wake-Up Receiver in 868 MHz</p>
           <p class="authors">O. Chafai, M. W. Nasri, R. Barrak, <strong>S. Ouerghemmi</strong>, I. Ketata, F. Derbel</p>
-          <p class="venue">20th International Multi-Conference on Systems, Signals &amp; Devices (SSD), Mahdia, Tunisia, pp. 30–35</p>
+          <p class="venue">20. International Multi-Conference on Systems, Signals &amp; Devices (SSD), Mahdia, Tunesien, S. 30&ndash;35</p>
         </div>
       </div>
 
@@ -325,7 +330,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="title">Design and Implementation of a Low Noise Amplifier Operating at 868 MHz for a Duty-Cycled Wake-Up Receiver Front-End</p>
           <p class="authors">I. Ketata, <strong>S. Ouerghemmi</strong>, A. Fakhfakh, F. Derbel</p>
           <p class="venue">Electronics 11(19), 3235</p>
-          <p class="links"><a href="https://doi.org/10.3390/electronics11193235" target="_blank" rel="noopener">DOI</a> · open access</p>
+          <p class="links"><a href="https://doi.org/10.3390/electronics11193235" target="_blank" rel="noopener">DOI</a> &middot; Open Access</p>
         </div>
       </div>
 
@@ -340,16 +345,17 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     </section>
 
     <section id="teaching">
-      <h2>Teaching &amp; supervision</h2>
+      <h2>Lehre &amp; Betreuung</h2>
       <p>
-        At HTWK Leipzig I supervise graduation projects and final-year engineering students —
-        task planning, weekly project reviews, and managing laboratory resources and components.
-        I also give seminars and support professors in courses and workshops.
+        An der HTWK Leipzig betreue ich Abschlussarbeiten und Studierende im letzten
+        Studienjahr &ndash; Aufgabenplanung, wöchentliche Projektbesprechungen sowie die
+        Verwaltung von Laborressourcen und Bauteilen. Außerdem halte ich Seminare und
+        unterstütze Professoren in Lehrveranstaltungen und Workshops.
       </p>
       <p>
-        I am glad to hear from students interested in RF front-end design, low-power embedded
-        hardware, or PCB development for sensor nodes.
-        <a href="index.html#contact">Get in touch</a>.
+        Über Anfragen von Studierenden zu HF-Frontend-Entwurf, energiesparender
+        Embedded-Hardware oder Leiterplattenentwicklung für Sensorknoten freue ich mich.
+        <a href="cv.html#contact">Kontakt</a>.
       </p>
     </section>
 
@@ -384,13 +390,13 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     root.dataset.theme = 'dark';
   }
   themeBtn.setAttribute('aria-label',
-    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    root.dataset.theme === 'dark' ? 'Zur hellen Ansicht wechseln' : 'Zur dunklen Ansicht wechseln');
 
   themeBtn.addEventListener('click', function(){
     var dark = root.dataset.theme === 'dark';
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to dark mode' : 'Switch to light mode');
+    themeBtn.setAttribute('aria-label', dark ? 'Zur dunklen Ansicht wechseln' : 'Zur hellen Ansicht wechseln');
   });
 
   var nav = document.getElementById('sidenav'), scrim = document.getElementById('scrim'),
@@ -444,7 +450,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
       seen[item.text] = 1; return true;
     }).slice(0, 10);
     if (!hits.length){
-      results.innerHTML = '<div class="empty">Nothing found on this page. Try the other pages.</div>';
+      results.innerHTML = '<div class="empty">Auf dieser Seite nichts gefunden. Bitte die anderen Seiten versuchen.</div>';
     } else {
       results.innerHTML = hits.map(function(h){
         var safe = h.text.replace(/[&<>]/g, function(c){

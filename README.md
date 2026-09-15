@@ -1,68 +1,60 @@
 # Personal website — Dr.-Ing. Sarah Ouerghemmi
 
-A static site. Three pages, no build step, no dependencies. Open `index.html`
-in a browser to see it exactly as it will look online.
+A static site in two languages. English at the root, German in the `de/` folder.
+No build step, no dependencies. Open `index.html` in a browser to see it.
 
 ## Files
 
 ```
-index.html        Home: short welcome page
-cv.html           CV: experience, skills, education, awards, contact
-research.html     Research: wake-up receivers, topics, publications, teaching
-projects.html     Projects: FUBE, WakeUp-Receiver, CONCENTRATE, earlier work
-404.html          Shown when a visitor hits a URL that does not exist
-img/portrait.jpg  Your photo (square, 520x520)
-img/favicon.svg   The little icon in the browser tab
-CV_Sarah_Ouerghemmi.pdf   Linked from the "Download CV" button
-robots.txt        Lets search engines index the site
-sitemap.xml       Lists the three pages for search engines
-.nojekyll         Tells GitHub Pages to serve the files as they are
-README.md         This file
+index.html         Home (English)
+research.html      Research
+projects.html      Projects
+cv.html            CV: experience, skills, education, awards, contact
+404.html           Shown when a visitor hits a URL that does not exist
+de/                The same five pages in German
+img/portrait.jpg   Your photo (square)
+img/favicon.svg    The icon in the browser tab
+CV_Sarah_Ouerghemmi.pdf   Linked from the download buttons
+robots.txt         Lets search engines index the site
+sitemap.xml        Lists both language versions
+.nojekyll          Tells GitHub Pages to serve the files as they are
 ```
 
-Keep everything in one folder. The links between pages are relative.
+Keep the structure as it is. The German pages reach the images and the CV with
+`../`, so moving them breaks those links.
+
+## The language switch
+
+Every page has a button in the header that jumps to the same page in the other
+language: `research.html` goes to `de/research.html` and back. Each page also
+declares the other language in its `<head>` with `hreflang`, so Google shows a
+German visitor the German version.
 
 ## Before you publish: one find-and-replace
 
-Four files contain the placeholder `https://YOUR-USERNAME.github.io/`:
-`index.html`, `research.html`, `projects.html`, `404.html`, `robots.txt`,
-`sitemap.xml`. Replace it with your real address once you know it. It is used
-for the preview card that appears when someone shares a link on LinkedIn, and
-for search engines. The site works without doing this; the share cards just
-will not show your photo.
+The placeholder `https://YOUR-USERNAME.github.io/` appears in every HTML file,
+in `robots.txt` and in `sitemap.xml`. Replace it with your real address. It is
+used for the preview card when someone shares a link on LinkedIn, and for search
+engines. The site works without this; only the share cards suffer.
 
 ## Publishing on GitHub Pages (free)
 
-1. Create a free account at github.com if you do not have one.
-2. Create a new repository. If you name it `YOUR-USERNAME.github.io`, the site
-   lives at `https://YOUR-USERNAME.github.io`. Any other name puts it at
-   `https://YOUR-USERNAME.github.io/repository-name/`. Make it public.
-3. On the repository page choose "uploading an existing file", then drag in
-   everything from this folder, including the `img` folder. Commit.
-4. Go to Settings, then Pages in the left menu. Under "Build and deployment"
-   set Source to "Deploy from a branch", branch `main`, folder `/ (root)`. Save.
-5. Wait a minute or two and reload. The address appears at the top of that page.
-
-To change anything later, edit the file on GitHub or upload a new version. The
-site updates within a minute.
+1. Create a repository. Named `YOUR-USERNAME.github.io`, the site lives at
+   `https://YOUR-USERNAME.github.io`. Any other name puts it in a subfolder.
+2. Upload everything from this folder, including `img` and `de`.
+3. Settings, then Pages. Source: "Deploy from a branch", branch `main`,
+   folder `/ (root)`. Save.
+4. Wait a minute and reload. The address appears at the top of that page.
 
 ### Your own domain
 
-If you buy a domain (for example `sarah-ouerghemmi.de`), add it under
-Settings, Pages, "Custom domain", and at your domain registrar create a CNAME
-record pointing to `YOUR-USERNAME.github.io`. Tick "Enforce HTTPS" once it is
-verified.
-
-## Other hosts
-
-The same files work anywhere that serves static sites. Netlify and Cloudflare
-Pages both let you drag the folder onto their dashboard and are free for this.
+Add it under Settings, Pages, "Custom domain", then at your registrar create a
+CNAME record pointing to `YOUR-USERNAME.github.io`. Tick "Enforce HTTPS".
 
 ## Editing
 
-Everything is plain HTML with the CSS inside each file. To change the colours,
-edit the `--accent` value near the top of the `<style>` block in each page.
-To swap your photo, replace `img/portrait.jpg` with another square image.
+Plain HTML with the CSS inside each file. Colours: the `--accent` value near the
+top of the `<style>` block. Photo: replace `img/portrait.jpg`.
 
 Content lives between the `<main>` tags. A publication looks like this:
 
@@ -78,9 +70,10 @@ Content lives between the `<main>` tags. A publication looks like this:
 </div>
 ```
 
-Copy one, change the text, done. Projects use `<div class="proj">` and jobs use
-`<div class="entry">` the same way.
+Copy one, change the text. Projects use `<div class="proj">` and jobs use
+`<div class="entry">` the same way. Change both languages when you add something,
+or the two versions drift apart.
 
-If the site grows past a handful of pages, consider moving it to MkDocs
-Material, which builds pages from Markdown and adds real search across all of
-them.
+Note that the pages were generated from a script, so the CSS is duplicated in
+each file. If the site keeps growing, MkDocs Material builds pages from Markdown,
+handles two languages, and gives you real search across all of them.

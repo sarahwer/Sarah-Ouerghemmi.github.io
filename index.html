@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home — Dr.-Ing. Sarah Ouerghemmi</title>
-<meta name="description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
+<title>Start — Dr.-Ing. Sarah Ouerghemmi</title>
+<meta name="description" content="Sarah Ouerghemmi — Ingenieurin für Hochfrequenz- und Embedded-Hardware in Leipzig, Wake-up-Empfänger und energiesparende Funk-Frontends.">
 <meta name="author" content="Sarah Ouerghemmi">
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/">
 <link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/">
 <link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:title" content="Home — Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+<meta property="og:title" content="Start — Dr.-Ing. Sarah Ouerghemmi">
+<meta property="og:description" content="Sarah Ouerghemmi — Ingenieurin für Hochfrequenz- und Embedded-Hardware in Leipzig, Wake-up-Empfänger und energiesparende Funk-Frontends.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/de/">
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
-<meta property="og:locale" content="en_GB">
+<meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,6 +113,23 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+/* home figure */
+.figure{margin:3rem 0 0}
+.figure svg{width:100%;height:auto;display:block}
+.fig-band{fill:#1d6f74}
+.fig-band-2{fill:#bd6128}
+.fig-on-band{fill:#fff;font-size:17px;font-weight:500}
+.fig-core{fill:#1d6f74}
+.fig-core-t{fill:#fff;font-size:15px;font-weight:500}
+.fig-node{fill:var(--bg);stroke:var(--accent);stroke-width:1.5}
+.fig-node-t{fill:var(--accent);font-size:16px;font-weight:500}
+.fig-ring{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 6}
+.fig-arr{fill:none;stroke:var(--accent);stroke-width:2}
+.fig-pill{fill:none;stroke:var(--rule);stroke-width:1}
+.fig-pill-t{fill:var(--text-soft);font-size:15px}
+@media (max-width:760px){.figure{display:none}}
+
 /* home hero */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:3rem;align-items:start}
 .hero h2{font-size:1.15rem;font-weight:400;border:0;margin:1.75rem 0 .5rem;padding:0}
@@ -208,15 +225,15 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     </a>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-      <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
+      <input type="search" id="search" placeholder="Seite durchsuchen" aria-label="Seite durchsuchen" autocomplete="off">
       <div class="results" id="results" role="listbox"></div>
     </div>
-    <a class="lang" href="de/index.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
-    <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
+    <a class="lang" href="../index.html" hreflang="en" lang="en" title="This page in English">English</a>
+    <button class="icon-btn" id="theme-btn" aria-label="Zur dunklen Ansicht wechseln">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
     </button>
   </div>
-  <nav class="tabs" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
+  <nav class="tabs" aria-label="Pages"><a href="index.html" aria-current="page">Start</a><a href="research.html">Forschung</a><a href="projects.html">Projekte</a><a href="cv.html">Lebenslauf</a></nav>
 </header>
 
 
@@ -225,32 +242,88 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
   <main>
 
     <section id="welcome">
-      <h1>Welcome to my homepage!</h1>
+      <h1>Willkommen auf meiner Homepage!</h1>
       <div class="hero">
         <div>
-          <p>Hi, my name is Sarah and I am</p>
+          <p>Hallo, ich heiße Sarah und ich bin</p>
           <ul>
-            <li>Associate Researcher at <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">Leipzig University of Applied Sciences</a></li>
-            <li>Doctor of Engineering (Dr.-Ing.) from HTWK Leipzig and <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET'COM Sfax</a></li>
-            <li>RF and embedded hardware engineer</li>
-            <li>Member of the IEEE</li>
+            <li>Wissenschaftliche Mitarbeiterin an der <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">HTWK Leipzig</a></li>
+            <li>Doktorin der Ingenieurwissenschaften (Dr.-Ing.) der HTWK Leipzig und der <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET'COM Sfax</a></li>
+            <li>Ingenieurin für Hochfrequenz- und Embedded-Hardware</li>
+            <li>Mitglied des IEEE</li>
           </ul>
 
-          <h2>My research topics are</h2>
+          <h2>Meine Forschungsthemen sind</h2>
           <ul>
-            <li>Wake-Up Receivers</li>
-            <li>Wireless Sensor Networks</li>
-            <li>Low-Noise Amplifier Design</li>
-            <li>Ultra-Low-Power RF and Embedded Systems</li>
+            <li>Wake-up-Empfänger</li>
+            <li>Drahtlose Sensornetzwerke</li>
+            <li>Entwurf rauscharmer Verstärker (LNA)</li>
+            <li>Ultra-Low-Power-HF- und Embedded-Systeme</li>
           </ul>
 
           <p class="hero-links">
-            <a href="cv.html">Curriculum vitae</a> &middot;
-            <a href="CV_Sarah_Ouerghemmi.pdf">Download CV as PDF</a> &middot;
+            Leipzig, Deutschland<br>
             <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a>
           </p>
+          <p>
+            <a class="btn" href="../CV_Sarah_Ouerghemmi.pdf">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
+              Lebenslauf als PDF</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/dr-ing-sarah-ouerghemmi-baa91950" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn ghost" href="https://www.researchgate.net/profile/Sarah-Ouerghemmi" target="_blank" rel="noopener">ResearchGate</a>
+          </p>
         </div>
-        <img class="hero-photo" src="img/portrait.jpg" alt="Portrait of Sarah Ouerghemmi">
+        <img class="hero-photo" src="../img/portrait.jpg" alt="Portrait von Sarah Ouerghemmi">
+      </div>
+
+      <div class="figure">
+        <svg viewBox="0 0 1000 430" role="img" aria-labelledby="figtitle">
+          <title id="figtitle">Überblick der Kompetenzen: der Entwicklungszyklus von Konzept über Simulation und Layout bis zur Messung, mit Fachgebieten und Werkzeugen.</title>
+          <defs><marker id="fa" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M1 1L8 5L1 9" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+          <polygon class="fig-band" points="30,60 268,60 300,86 268,112 30,112"/>
+          <text class="fig-on-band" x="52" y="92">HF-Frontends</text>
+          <polygon class="fig-band" points="30,130 268,130 300,156 268,182 30,182"/>
+          <text class="fig-on-band" x="52" y="162">Embedded-Systeme</text>
+          <polygon class="fig-band" points="30,200 268,200 300,226 268,252 30,252"/>
+          <text class="fig-on-band" x="52" y="232">Drahtlose Sensornetzwerke</text>
+
+          <polygon class="fig-band-2" points="970,60 732,60 700,86 732,112 970,112"/>
+          <text class="fig-on-band" x="948" y="92" text-anchor="end">ADS &#183; Altium &#183; Fusion 360</text>
+          <polygon class="fig-band-2" points="970,130 732,130 700,156 732,182 970,182"/>
+          <text class="fig-on-band" x="948" y="162" text-anchor="end">Publikationen &amp; Lehre</text>
+          <polygon class="fig-band-2" points="970,200 732,200 700,226 732,252 970,252"/>
+          <text class="fig-on-band" x="948" y="232" text-anchor="end">Geförderte Verbünde</text>
+
+          <circle class="fig-ring" cx="500" cy="175" r="120"/>
+          <path class="fig-arr" d="M560 71 A 120 120 0 0 1 604 115" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M604 235 A 120 120 0 0 1 560 279" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M440 279 A 120 120 0 0 1 396 235" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M396 115 A 120 120 0 0 1 440 71" marker-end="url(#fa)"/>
+
+          <circle class="fig-core" cx="500" cy="175" r="60"/>
+          <text class="fig-core-t" x="500" y="162" text-anchor="middle">Wake-up-</text>
+          <text class="fig-core-t" x="500" y="182" text-anchor="middle">Empfänger-</text>
+          <text class="fig-core-t" x="500" y="202" text-anchor="middle">Frontend</text>
+
+          <rect class="fig-node" x="435" y="33" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="500" y="61" text-anchor="middle">Konzept</text>
+          <rect class="fig-node" x="555" y="153" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="620" y="181" text-anchor="middle">Simulation</text>
+          <rect class="fig-node" x="435" y="273" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="500" y="301" text-anchor="middle">Messung</text>
+          <rect class="fig-node" x="315" y="153" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="380" y="181" text-anchor="middle">Layout</text>
+
+          <rect class="fig-pill" x="75" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="200" y="378" text-anchor="middle">433 &amp; 868 MHz</text>
+          <rect class="fig-pill" x="375" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="500" y="378" text-anchor="middle">Unter 10 &#181;W</text>
+          <rect class="fig-pill" x="675" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="800" y="378" text-anchor="middle">Konzept bis Prototyp</text>
+        </svg>
       </div>
     </section>
 
@@ -285,13 +358,13 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
     root.dataset.theme = 'dark';
   }
   themeBtn.setAttribute('aria-label',
-    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    root.dataset.theme === 'dark' ? 'Zur hellen Ansicht wechseln' : 'Zur dunklen Ansicht wechseln');
 
   themeBtn.addEventListener('click', function(){
     var dark = root.dataset.theme === 'dark';
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to dark mode' : 'Switch to light mode');
+    themeBtn.setAttribute('aria-label', dark ? 'Zur dunklen Ansicht wechseln' : 'Zur hellen Ansicht wechseln');
   });
 
   var nav = document.getElementById('sidenav'), scrim = document.getElementById('scrim'),
@@ -345,7 +418,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
       seen[item.text] = 1; return true;
     }).slice(0, 10);
     if (!hits.length){
-      results.innerHTML = '<div class="empty">Nothing found on this page. Try the other pages.</div>';
+      results.innerHTML = '<div class="empty">Auf dieser Seite nichts gefunden. Bitte die anderen Seiten versuchen.</div>';
     } else {
       results.innerHTML = hits.map(function(h){
         var safe = h.text.replace(/[&<>]/g, function(c){

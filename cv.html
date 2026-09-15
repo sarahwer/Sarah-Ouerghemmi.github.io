@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CV — Dr.-Ing. Sarah Ouerghemmi</title>
-<meta name="description" content="Experience, skills, education and awards.">
+<title>Home — Dr.-Ing. Sarah Ouerghemmi</title>
+<meta name="description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/cv.html">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/cv.html">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/cv.html">
+<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/">
+<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/">
+<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:title" content="CV — Dr.-Ing. Sarah Ouerghemmi">
-<meta property="og:description" content="Experience, skills, education and awards.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/cv.html">
+<meta property="og:title" content="Home — Dr.-Ing. Sarah Ouerghemmi">
+<meta property="og:description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
@@ -113,6 +113,23 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+/* home figure */
+.figure{margin:3rem 0 0}
+.figure svg{width:100%;height:auto;display:block}
+.fig-band{fill:#1d6f74}
+.fig-band-2{fill:#bd6128}
+.fig-on-band{fill:#fff;font-size:17px;font-weight:500}
+.fig-core{fill:#1d6f74}
+.fig-core-t{fill:#fff;font-size:15px;font-weight:500}
+.fig-node{fill:var(--bg);stroke:var(--accent);stroke-width:1.5}
+.fig-node-t{fill:var(--accent);font-size:16px;font-weight:500}
+.fig-ring{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 6}
+.fig-arr{fill:none;stroke:var(--accent);stroke-width:2}
+.fig-pill{fill:none;stroke:var(--rule);stroke-width:1}
+.fig-pill-t{fill:var(--text-soft);font-size:15px}
+@media (max-width:760px){.figure{display:none}}
+
 /* home hero */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:3rem;align-items:start}
 .hero h2{font-size:1.15rem;font-weight:400;border:0;margin:1.75rem 0 .5rem;padding:0}
@@ -200,7 +217,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 
 <header class="topbar">
   <div class="bar">
-    <button class="icon-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+    
     <a class="brand" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
         <path d="M2 12h3l2-5 3 10 3-13 3 16 2-8h4"/></svg>
@@ -211,191 +228,102 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
       <input type="search" id="search" placeholder="Search this page" aria-label="Search this page" autocomplete="off">
       <div class="results" id="results" role="listbox"></div>
     </div>
-    <a class="lang" href="de/cv.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
+    <a class="lang" href="de/index.html" hreflang="de" lang="de" title="Diese Seite auf Deutsch">Deutsch</a>
     <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9"/></svg>
     </button>
   </div>
-  <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="cv.html" aria-current="page">CV</a></nav>
+  <nav class="tabs" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></nav>
 </header>
 
-<div class="scrim" id="scrim"></div>
-<div class="layout">
-  <nav class="sidenav" id="sidenav" aria-label="On this page">
-    <p>On this page</p>
-    <ul class="sections"><li><a href="#about">Summary</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#awards">Awards</a></li><li><a href="#contact">Contact</a></li></ul>
-  </nav>
+
+<div class="layout plain">
+  
   <main>
 
-    <section id="about">
-      <h1>Curriculum vitae</h1>
-      <p class="lead">
-        RF and embedded hardware engineer, Dr.-Ing. with highest distinction, with more than
-        five years developing ultra-low-power radio front ends from concept to validated
-        prototype.
-      </p>
-      <p>
-        I spend my days making radios listen for less power. Over the past five years I have
-        built ultra-low-power RF front ends and low-noise amplifiers for wake-up receivers,
-        taking them from circuit concept through ADS simulation and PCB layout to a prototype
-        measured on the bench. Alongside the hardware I publish in international journals and
-        conferences, give seminars, and supervise graduation projects.
-      </p>
-      <p>
-        What I care about is the distance between a result on a bench and a product that uses
-        it. I am currently looking for an industrial R&amp;D or project leadership role where
-        I can close it.
-      </p>
-      <p>
-        <a class="btn" href="CV_Sarah_Ouerghemmi.pdf">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
-          Download as PDF</a>
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="entry">
-        <div class="when">03/2021 – present</div>
+    <section id="welcome">
+      <h1>Welcome to my homepage!</h1>
+      <div class="hero">
         <div>
-          <h4>Associate Researcher — Wake-Up Receiver Development</h4>
-          <p class="where">HTWK Leipzig, Germany · Wissenschaftliche Mitarbeiterin</p>
-          <p class="lede">
-            Development and validation of ultra-low-power RF front ends for wireless sensor
-            networks, from circuit concept through PCB prototype to bench characterisation.
-          </p>
+          <p>Hi, my name is Sarah and I am</p>
           <ul>
-            <li>Contributed a wake-up receiver front end operating below 10 µW while meeting sensitivity targets, enabling continuous connectivity in battery-powered sensor networks</li>
-            <li>Covered the full hardware cycle: 868 MHz LNA and matching network design, ADS simulation, schematic and PCB layout in Altium Designer and Fusion 360, prototype build and MSP430-based bench characterisation</li>
-            <li>Supervised graduation projects and final-year engineering students: task planning, weekly reviews, laboratory resources and component management</li>
-            <li>Gave seminars, supported professors in courses and workshops, and published in international journals and conferences</li>
-            <li>Co-prepared DAAD funding proposals (Ta'Ziz, SDG initiatives) and represented the institution at international conferences</li>
+            <li>Associate Researcher at <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">Leipzig University of Applied Sciences</a></li>
+            <li>Doctor of Engineering (Dr.-Ing.) from HTWK Leipzig and <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET'COM Sfax</a></li>
+            <li>RF and embedded hardware engineer</li>
+            <li>Member of the IEEE</li>
           </ul>
+
+          <h2>My research topics are</h2>
+          <ul>
+            <li>Wake-Up Receivers</li>
+            <li>Wireless Sensor Networks</li>
+            <li>Low-Noise Amplifier Design</li>
+            <li>Ultra-Low-Power RF and Embedded Systems</li>
+          </ul>
+
+          <p class="hero-links">
+            Leipzig, Germany<br>
+            <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a>
+          </p>
+          <p>
+            <a class="btn" href="CV_Sarah_Ouerghemmi.pdf">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
+              Download CV</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/dr-ing-sarah-ouerghemmi-baa91950" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn ghost" href="https://www.researchgate.net/profile/Sarah-Ouerghemmi" target="_blank" rel="noopener">ResearchGate</a>
+          </p>
         </div>
+        <img class="hero-photo" src="img/portrait.jpg" alt="Portrait of Sarah Ouerghemmi">
       </div>
+      <div class="figure">
+        <svg viewBox="0 0 1000 430" role="img" aria-labelledby="figtitle">
+          <title id="figtitle">Overview of expertise: the hardware design cycle from concept through simulation, PCB layout and measurement, with domains and tools around it.</title>
+          <defs><marker id="fa" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M1 1L8 5L1 9" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 
-      <div class="entry">
-        <div class="when">08 – 12/2020</div>
-        <div>
-          <h4>Graduation Project</h4>
-          <p class="where">HTWK Leipzig, Germany</p>
-          <p class="lede">868 MHz LNA architecture for wake-up receivers: transistor characterisation, ADS simulation and PCB implementation in Altium Designer. Graded excellent.</p>
-        </div>
+          <polygon class="fig-band" points="30,60 268,60 300,86 268,112 30,112"/>
+          <text class="fig-on-band" x="52" y="92">RF front ends</text>
+          <polygon class="fig-band" points="30,130 268,130 300,156 268,182 30,182"/>
+          <text class="fig-on-band" x="52" y="162">Embedded systems</text>
+          <polygon class="fig-band" points="30,200 268,200 300,226 268,252 30,252"/>
+          <text class="fig-on-band" x="52" y="232">Wireless sensor networks</text>
+
+          <polygon class="fig-band-2" points="970,60 732,60 700,86 732,112 970,112"/>
+          <text class="fig-on-band" x="948" y="92" text-anchor="end">ADS &#183; Altium &#183; Fusion 360</text>
+          <polygon class="fig-band-2" points="970,130 732,130 700,156 732,182 970,182"/>
+          <text class="fig-on-band" x="948" y="162" text-anchor="end">Publications &amp; teaching</text>
+          <polygon class="fig-band-2" points="970,200 732,200 700,226 732,252 970,252"/>
+          <text class="fig-on-band" x="948" y="232" text-anchor="end">Funded consortia</text>
+
+          <circle class="fig-ring" cx="500" cy="175" r="120"/>
+          <path class="fig-arr" d="M560 71 A 120 120 0 0 1 604 115" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M604 235 A 120 120 0 0 1 560 279" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M440 279 A 120 120 0 0 1 396 235" marker-end="url(#fa)"/>
+          <path class="fig-arr" d="M396 115 A 120 120 0 0 1 440 71" marker-end="url(#fa)"/>
+
+          <circle class="fig-core" cx="500" cy="175" r="60"/>
+          <text class="fig-core-t" x="500" y="162" text-anchor="middle">Wake-up</text>
+          <text class="fig-core-t" x="500" y="182" text-anchor="middle">receiver</text>
+          <text class="fig-core-t" x="500" y="202" text-anchor="middle">front end</text>
+
+          <rect class="fig-node" x="435" y="33" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="500" y="61" text-anchor="middle">Concept</text>
+          <rect class="fig-node" x="555" y="153" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="620" y="181" text-anchor="middle">Simulation</text>
+          <rect class="fig-node" x="435" y="273" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="500" y="301" text-anchor="middle">Measurement</text>
+          <rect class="fig-node" x="315" y="153" width="130" height="44" rx="8"/>
+          <text class="fig-node-t" x="380" y="181" text-anchor="middle">PCB layout</text>
+
+          <rect class="fig-pill" x="75" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="200" y="378" text-anchor="middle">433 &amp; 868 MHz</text>
+          <rect class="fig-pill" x="375" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="500" y="378" text-anchor="middle">Below 10 &#181;W</text>
+          <rect class="fig-pill" x="675" y="350" width="250" height="46" rx="23"/>
+          <text class="fig-pill-t" x="800" y="378" text-anchor="middle">Concept to prototype</text>
+        </svg>
       </div>
-
-      <div class="entry">
-        <div class="when">07 – 09/2019</div>
-        <div>
-          <h4>Engineer Trainee, Automation Team</h4>
-          <p class="where">Sagemcom Software &amp; Technologies, Mégrine, Tunisia</p>
-          <p class="lede">Cloud services and server virtualisation for test deployments, gateway configuration and value provisioning, and an Auto Configuration Server set up in the cloud. TR-069, Linux, TCP/IP, XML-RPC, SOAP, Jenkins.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="when">01 – 05/2019</div>
-        <div>
-          <h4>End-of-Year Project</h4>
-          <p class="where">PIVA Software, Sfax, Tunisia</p>
-          <p class="lede">Person detection and recognition system for site security. OpenCV, CNNs, TensorFlow/Keras, FaceNet, prototyped on Raspberry Pi.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="when">07 – 08/2018</div>
-        <div>
-          <h4>Summer Internship</h4>
-          <p class="where">Sagemcom, Ben Arous, Tunisia</p>
-          <p class="lede">Production of Linky electric meters, from SMD/THD PCB assembly to functional testing and CPL integration.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <table class="skills">
-        <tbody>
-          <tr><th scope="row">RF design</th><td>Ultra-low-power LNA and matching network design, noise figure and sensitivity optimisation, Agilent ADS; full cycle from simulation through schematic and layout to prototype and validation</td></tr>
-          <tr><th scope="row">PCB &amp; schematic</th><td>Altium Designer, Autodesk Fusion 360 Electronics, mixed-signal layout</td></tr>
-          <tr><th scope="row">Lab &amp; test</th><td>VNA, spectrum analyser, oscilloscope, logic analyser, JTAG/SWD debugging</td></tr>
-          <tr><th scope="row">Embedded systems</th><td>MSP430, STM32 (ARM Cortex-M), DSP, Raspberry Pi, FPGA; bare-metal firmware, low-power design, interrupt handling, peripheral drivers (HAL)</td></tr>
-          <tr><th scope="row">Protocols</th><td>UART, SPI, I²C, CAN, TCP/IP, wireless sensor networks</td></tr>
-          <tr><th scope="row">Programming</th><td>C (advanced), C++, Python, Assembly, MATLAB, VHDL and VHDL-AMS</td></tr>
-          <tr><th scope="row">Leadership &amp; delivery</th><td>Student and junior engineer supervision, project planning and weekly reviews, laboratory resource and component management, funding acquisition, international partner coordination, intercultural communication</td></tr>
-          <tr><th scope="row">Methods &amp; tools</th><td>Git and GitHub, Agile, Scrum, UML, Linux</td></tr>
-          <tr><th scope="row">Languages</th><td>Arabic (native), French (bilingual), English (full professional, C1), German (B1), Maltese (basic)</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-
-      <div class="entry">
-        <div class="when">2021 – 2025</div>
-        <div>
-          <h4>Doctoral Degree (Dr.-Ing.) — Embedded &amp; Communication Systems</h4>
-          <p class="where">HTWK Leipzig, Germany and ENET'COM Sfax, Tunisia</p>
-          <p class="lede">Joint co-supervision between the two universities on low-power RF for wireless sensor networks. Awarded with highest distinction and the congratulations of the jury.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="when">2017 – 2020</div>
-        <div>
-          <h4>Engineering Degree in Electronics &amp; Communication</h4>
-          <p class="where">ENET'COM, Sfax, Tunisia</p>
-          <p class="lede">Embedded systems, communication networks and signal processing. Ranked 2nd of 60.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="when">2014 – 2017</div>
-        <div>
-          <h4>Preparatory Cycle Degree, Chemistry &amp; Physics</h4>
-          <p class="where">Preparatory Institute for Engineering Studies of El Manar, Tunis, Tunisia</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="awards">
-      <h2>Awards &amp; certificates</h2>
-      <ul>
-        <li>Linux Foundation LFS207, Linux System Administration Essentials — recipient of the LiFT Training Scholarship, Women in Open Source</li>
-        <li>DAAD Scholarship for the graduation project at HTWK Leipzig, 2020</li>
-        <li>IBM Artificial Intelligence Analyst, Mastery Award, 2019</li>
-        <li>IBM Data Science Orientation</li>
-        <li>ERASMUS Soliya Connect Programme, virtual exchange participant</li>
-        <li>Certificate of achievement, first edition of the Tunisian Olympiad in Problem Solving</li>
-      </ul>
-
-      <h3 id="outside">Outside the lab</h3>
-      <ul>
-        <li>Volunteer, Tunisian Red Crescent, Soukra local committee, 2018</li>
-        <li>Team leader, ENET'COM handball team, 2018–2020</li>
-        <li>Communication manager, Competitive Programming Club, 2018–2019</li>
-        <li>Organisation team manager, ACM Tunisian Collegiate Programming Contest, 2019</li>
-        <li>Participant, Tunisian Olympiad of Problem Solving</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        I am currently open to R&amp;D and project leadership roles in industry. If your team
-        works on RF front ends, embedded hardware or wireless sensor products, I would be glad
-        to talk — about a position, a collaboration, or a problem you are trying to solve.
-      </p>
-      <p>
-        Leipzig, Germany<br>
-        <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a>
-      </p>
-      <p>
-        <a class="btn ghost" href="https://www.linkedin.com/in/dr-ing-sarah-ouerghemmi-baa91950" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a class="btn ghost" href="https://www.researchgate.net/profile/Sarah-Ouerghemmi" target="_blank" rel="noopener">ResearchGate</a>
-      </p>
     </section>
 
   </main>

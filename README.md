@@ -14,7 +14,8 @@ cv.html            CV: experience, skills, education, awards, contact
 de/                The same five pages in German
 img/portrait.jpg   Your photo (square)
 img/favicon.svg    The icon in the browser tab
-CV_Sarah_Ouerghemmi.pdf   Linked from the download buttons
+CV_Sarah_Ouerghemmi_EN.pdf   English CV, linked from the English pages
+CV_Sarah_Ouerghemmi_DE.pdf   German CV, linked from the German pages
 robots.txt         Lets search engines index the site
 sitemap.xml        Lists both language versions
 .nojekyll          Tells GitHub Pages to serve the files as they are
